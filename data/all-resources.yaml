@@ -1,0 +1,54 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: sonata-db
+  description: Oracle database to store Sonata data
+spec:
+  type: database
+  owner: employee-benefits
+  system: employee-benefits
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: mongo-db
+  description: Mongo database to store EB data
+spec:
+  type: database
+  owner: employee-benefits
+  system: employee-benefits
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: tanzu-kubernetes-cluster
+  description: Kubernetes runtime environment
+spec:
+  type: kubernetes-cluster
+  owner: employee-benefits
+  system: employee-benefits
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: openshift-3-cluster
+  description: Openshift 3 runtime environment
+spec:
+  type: kubernetes-cluster
+  owner: employee-benefits
+  system: employee-benefits
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: openshift-4-cluster
+  description: Openshift 4 runtime environment
+spec:
+  type: kubernetes-cluster
+  owner: employee-benefits
+  system: employee-benefits

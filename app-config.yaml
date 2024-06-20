@@ -1,9 +1,9 @@
 app:
-  title: Scaffolded Backstage App
+  title: Discovery EB
   baseUrl: http://localhost:3000
 
 organization:
-  name: My Company
+  name: Discovery EB
 
 backend:
   # Used for enabling authentication, secret is shared by all backend plugins
@@ -79,8 +79,25 @@ catalog:
     - allow: [Component, System, API, Resource, Location]
   locations:
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
+    #- type: file
+    #  target: ../../examples/entities.yaml
+      
     - type: file
-      target: ../../examples/entities.yaml
+      target: ../../eb-data/org.yaml
+      rules:
+        - allow: [User, Group]
+    - type: file
+      target: ../../eb-data/all-apis.yaml
+    - type: file
+      target: ../../eb-data/all-components-library.yaml
+    - type: file
+      target: ../../eb-data/all-components.yaml
+    - type: file
+      target: ../../eb-data/all-domains.yaml
+    - type: file
+      target: ../../eb-data/all-resources.yaml
+    - type: file
+      target: ../../eb-data/all-systems.yaml
 
     # Local example template
     - type: file
@@ -89,14 +106,14 @@ catalog:
         - allow: [Template]
 
     # Local example organizational data
-    - type: file
-      target: ../../examples/org.yaml
-      rules:
-        - allow: [User, Group]
+    #- type: file
+    #  target: ../../examples/org.yaml
+    #  rules:
+    #    - allow: [User, Group]
 
     ## Uncomment these lines to add more example data
-    # - type: url
-    #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
+    #- type: url
+    #  target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
 
     ## Uncomment these lines to add an example org
     # - type: url

@@ -1,0 +1,83 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eb-lib-camunda-rest-client
+spec:
+  type: library
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eb-lib-commons
+spec:
+  type: library
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eb-lib-domain
+spec:
+  type: library
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eb-lib-mongo-encrypt
+spec:
+  type: library
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eb-lib-sonata-sbs-api
+spec:
+  type: library
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eb-domain-model
+spec:
+  type: library
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eb-auth-resource-server
+spec:
+  type: library
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits

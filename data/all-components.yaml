@@ -1,0 +1,254 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eb-sl-thirdparty-api
+spec:
+  type: service
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
+  providesApis: [example-grpc-api]
+  dependsOn:
+   - component:eb-auth-resource-server
+   - component:eb-lib-commons
+   - component:eb-lib-camunda-rest-client
+   - component:eb-lib-sonata-sbs-api
+   - resource:openshift-3-cluster
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ceb-svc-digital-integration
+spec:
+  type: service
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
+  providesApis:
+   - ceb-svc-digital-integration-api
+  dependsOn:
+   - component:eb-auth-resource-server
+   - component:eb-lib-commons
+   - component:eb-lib-camunda-rest-client
+   - component:eb-lib-sonata-sbs-api
+   - resource:openshift-3-cluster
+
+
+
+# archived-eb-sl-member-investments
+# ceb-db-ms-legacy
+# debs-ceb-db-warehouse
+# debs-domain
+# debs-quote
+# debs-services
+# debs-ui-ws
+# debs-web
+# dgr-ecrion-templates
+# discovery-bank-base
+# discovery-bank-java
+# discovery-bank-pipeline
+# eb-admin-server
+# eb-angular-war-creator
+# eb-auth-pdp
+# eb-auth-pip
+# eb-auth-server
+# eb-auth-workflow
+# eb-automated-tests
+# eb-calc-test
+# eb-calculator
+# eb-calculator-swagger
+# eb-camunda-models
+# eb-commons
+# eb-config-service
+# eb-contribution-rates
+# eb-correspondence
+# eb-corro-templates
+# eb-database
+# eb-devops-jobbuilder
+# eb-dl-gl-member
+# eb-dl-investment-asset
+# eb-dl-member
+# eb-dl-uf-member
+# eb-documents
+# eb-esqs-worker-email-password-protection
+# eb-file-services
+# eb-gl-il-payload-preparation
+# eb-il-aml
+# eb-il-banking-integration
+# eb-il-bank-verification
+# eb-il-booster
+# eb-il-broker-sync
+# eb-il-change-request
+# eb-il-commission-payment
+# eb-il-communication-api
+# eb-il-compass-api-employer
+# eb-il-compass-api-member
+# eb-il-correspondence-services
+# eb-il-corro-orchestrator
+# eb-il-data-services
+# eb-il-document-scan
+# eb-il-ecrion
+# eb-il-ecrion-api
+# eb-il-finance
+# eb-il-generic-forms
+# eb-il-icompare
+# eb-il-indexing
+# eb-il-info-slip
+# eb-il-inquba
+# eb-il-insure
+# eb-il-invest
+# eb-il-ldap
+# eb-il-ncbi
+# eb-il-notification-engine
+# eb-il-oracle-services
+# eb-il-rewards
+# eb-il-sap-entities
+# eb-il-sa-portfolio
+# eb-il-sharepoint-service
+# eb-il-smartcomm
+# eb-il-smart-comm
+# eb-il-smartcompliance
+# eb-il-sonata-account
+# eb-il-sonata-batch
+# eb-il-sonata-client
+# eb-il-sonata-fund
+# eb-il-sonata-notes
+# eb-il-sonata-sbs-client
+# eb-il-sonata-scheme
+# eb-il-sonata-static-data
+# eb-il-sonata-workflow
+# eb-il-storage-services
+# eb-il-uf-sonata-account
+# eb-il-uf-sonata-client
+# eb-il-vitality
+# eb-integration-tests
+# eb-jira_ticket_hook
+# eb-kubernetes-config
+# eb-mongo-decrypt
+# eb-ms-quote
+# eb-ng-workspace
+# eb-pipeline
+# eb-poc
+# eb-poc-embedded-mongodb
+# eb-pocky
+# eb-portal-broker-journey
+# eb-portal-broker-zone
+# eb-portal-employer-onboarding
+# eb-portal-member-board
+# eb-portal-member-journey
+# eb-portal-member-zone
+# eb-portal-operations-support
+# eb-pricing_test
+# eb-process-controller
+# eb-reporting
+# eb-security-common
+# eb-sl-access-management
+# eb-sl-aps
+# eb-sl-auth
+# eb-sl-broker-correspondence
+# eb-sl-broker-dashboard
+# eb-sl-broker-journey
+# eb-sl-bulk-correspondence
+# eb-sl-bulk-email
+# eb-sl-bulk-transfers
+# eb-sl-config-details
+# eb-sl-contribution-schedule
+# eb-sl-correspondence
+# eb-sl-correspondence-bulk
+# eb-sl-data-comp-validator
+# eb-sl-deid
+# eb-sl-document-repository
+# eb-sl-employer
+# eb-sl-employer-correspondence
+# eb-sl-employer-onboarding
+# eb-sl-employer-policy
+# eb-sl-fop
+# eb-sl-generic-file-upload
+# eb-sl-goal-calculator
+# eb-sl-goal-dashboard
+# eb-sl-inquba
+# eb-sl-member
+# eb-sl-member-calculators
+# eb-sl-member-correspondence
+# eb-sl-member-details
+# eb-sl-member-file-upload
+# eb-sl-member-goal
+# eb-sl-member-invest
+# eb-sl-member-investments
+# eb-sl-member-journey
+# eb-sl-member-zone
+# eb-sl-member-zone-NirdoshSingh
+# eb-sl-operations-support
+# eb-sl-payload-generator
+# eb-sl-portal-logging
+# eb-sl-pricing-model-transform
+# eb-sl-schedule-file-shared
+# eb-sl-shared-services
+# eb-sl-tracing
+# eb-sl-trade-instruction
+# eb-sl-transform
+# eb-sonata-master_scripts
+# eb-sonata-workflow
+# eb-test
+# eb-tooling-grafana
+# eb-tooling-node-exporter
+# eb-tooling-prometheus
+# eb-uf-il-payload-preparation
+# eb-ui-proxy
+# eb-ui-war-bundler
+# eb-ui-workspace
+# eb-umbf-workspace
+# eb-worker-generate-dhms-document
+# eb-worker-generate-quote-doc
+# eb-worker-generate-quote-document
+# eb-worker-gr-mbs
+# eb-worker-open-email-attachment
+# eb-worker-poc
+# eb-worker-poll-deepsecure
+# eb-worker-process-order-poc
+# eb-worker-seed-data-converter
+# eb-worker-uf-mbs
+# eb-worker-uf-tranfer-in
+# eb-workflow-process-models
+# gs-spring-boot-docker
+# MemberJourneyPoc
+# PenTesting
+# poc-angular-nx-jenkins
+# poc-auth-resources
+# poc-basic-auth
+# poc-k8s-hello-world
+# poc-mono-repo
+# process-controller-testbench
+# TEST
+# uf-automated-tests
+# wfproject
+# zzz
+# ceb-app-digital-forms
+# ceb-app-digital-zones
+# ceb-app-operations-portal
+# ceb-argo-cd-resources
+# ceb-argo-cd-services-manifests
+# ceb-db-apex
+# ceb-db-dgr-integrator
+# ceb-db-icompare-life-staging
+# dceb-ceb-db-warehouse
+# ceb-svc-bureau-integration
+# ceb-svc-digital-integration
+# ceb-svc-entity-sync
+# ceb-svc-group-risk-business
+# ceb-svc-heritage-process-integration
+# ceb-svc-retirement-funds-business
+# ceb-svc-shared-business
+# nova
+# nova-angular
+# nova-demo
+# nova-file-manager
+# nova-itax
+# nova-pipelines
+# nova-schedule
+# nova-schedule-angular
+# nova-service-parent
