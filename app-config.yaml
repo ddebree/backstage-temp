@@ -83,21 +83,21 @@ catalog:
     #  target: ../../examples/entities.yaml
       
     - type: file
-      target: ../../eb-data/org.yaml
+      target: ../../data/org.yaml
       rules:
         - allow: [User, Group]
     - type: file
-      target: ../../eb-data/all-apis.yaml
+      target: ../../data/all-apis.yaml
     - type: file
-      target: ../../eb-data/all-components-library.yaml
+      target: ../../data/all-components-library.yaml
     - type: file
-      target: ../../eb-data/all-components.yaml
+      target: ../../data/all-components.yaml
     - type: file
-      target: ../../eb-data/all-domains.yaml
+      target: ../../data/all-domains.yaml
     - type: file
-      target: ../../eb-data/all-resources.yaml
+      target: ../../data/all-resources.yaml
     - type: file
-      target: ../../eb-data/all-systems.yaml
+      target: ../../data/all-systems.yaml
 
     # Local example template
     - type: file
