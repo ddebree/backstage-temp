@@ -15,7 +15,45 @@ spec:
    - component:eb-lib-commons
    - component:eb-lib-camunda-rest-client
    - component:eb-lib-sonata-sbs-api
+   - component:eb-il-inquba
+   - component:eb-sl-correspondence
+   - component:eb-sl-member
+   - component:eb-sl-config-details
+   - component:eb-auth-pdp
+   - component:eb-process-controller
+   - component:inquba
    - resource:openshift-3-cluster
+   - resource:sonata-db
+   - resource:mongo-db
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eb-il-inquba
+spec:
+  type: service
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
+  dependsOn:
+   - component:eb-sl-thirdparty-api
+   - component:eb-il-sonata-workflow
+   - resource:mongo-db
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eb-process-controller
+  description: Runtime for Camunda processes
+spec:
+  type: service
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
 
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component

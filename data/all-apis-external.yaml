@@ -1,0 +1,23 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: inquba-events-api
+spec:
+  type: rest
+  lifecycle: unknown
+  owner: inquba
+  system: inquba
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: inquba-token-api
+spec:
+  type: rest
+  lifecycle: unknown
+  owner: inquba
+  system: inquba

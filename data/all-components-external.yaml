@@ -1,0 +1,14 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: inquba
+spec:
+  type: service
+  lifecycle: unknown
+  owner: employee-benefits
+  system: employee-benefits
+  providesApis:
+    - inquba-event-api
+    - inquba-token-api
